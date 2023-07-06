@@ -6,10 +6,12 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "preview": "astro build && deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
+    "pkg": "astro build && deno compile --allow-net --allow-read --allow-env ./dist/server/entry.mjs -o server"
   },
   "dependencies": {
+    "@astrojs/deno": "^4.2.0",
     "astro": "^2.8.0"
   }
 }
