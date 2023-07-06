@@ -12,6 +12,10 @@
   },
   "dependencies": {
     "@astrojs/deno": "^4.2.0",
+    "@prisma/client": "^4.16.2",
     "astro": "^2.8.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.16.2"
   }
 }
